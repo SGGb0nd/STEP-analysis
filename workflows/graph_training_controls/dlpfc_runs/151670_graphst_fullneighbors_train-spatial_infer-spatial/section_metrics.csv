@@ -1,0 +1,3 @@
+section,method,training_mode,train_graph,infer_graph,variant,n_eval_spots,n_reference_domains,n_predicted_domains,ari,nmi,pas,chaos
+151670,graphst,fullneighbors,spatial,spatial,mclust,3484,5,5,0.5491298440588435,0.5480700351588838,0.8512055109070035,0.06250297016076396
+151670,graphst,fullneighbors,spatial,spatial,mclust_refined,3484,5,5,0.5985891542883335,0.6134184162792445,0.9356199770378875,0.06032336620715621

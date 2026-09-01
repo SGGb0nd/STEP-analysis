@@ -1,0 +1,82 @@
+{
+  "source_model_output": "data/mosta_e16_test.h5ad",
+  "raw_count_directory": "data/stomics-mosta",
+  "sections": [
+    "E16.5_E2S1.MOSTA",
+    "E16.5_E2S4.MOSTA",
+    "E16.5_E2S7.MOSTA",
+    "E16.5_E2S10.MOSTA",
+    "E16.5_E2S13.MOSTA"
+  ],
+  "n_liver_spots": 46179,
+  "n_full_transcriptome_genes": 29330,
+  "expression_preprocessing": "Per-section raw layers[count] -> CP10K -> log1p",
+  "de_method": "scanpy.tl.rank_genes_groups(method='wilcoxon', tie_correct=True), domain versus remaining Liver spots within each section",
+  "multiple_testing": "Benjamini-Hochberg within each section-domain genome-wide contrast",
+  "marker_scoring": "scanpy.tl.score_genes on literature-defined genes; marker genes were not selected from STEP domains",
+  "marker_enrichment_definition": "Within each section, marker-high spots are the top requested score fraction. Expected overlap equals n_marker_high multiplied by the observed domain spot proportion in that section.",
+  "marker_high_fraction": 0.15,
+  "minimum_display_domain_fraction": 0.05,
+  "cross_section_marker_summary": "Mantel-Haenszel common odds ratio over section-specific 2x2 tables; section counts are reported only as directional replication.",
+  "gsea_method": "gseapy.prerank using per-section signed Wilcoxon scores; exact score ties are ordered by log2 fold change and gene name with a strictly order-preserving floating-point perturbation",
+  "repeat_supported_deg_definition": "Tested and positive in every section where the domain is present, BH-FDR below 0.05 in at least half of those sections, and median log2 fold change above 0.25",
+  "recurrent_positive_gsea_definition": "Positive NES in every section where the domain is present and GSEA FDR below 0.05 in at least half of those sections",
+  "go_library": "GO_Biological_Process_2025",
+  "gsea_permutations": 1000,
+  "source_records": [
+    {
+      "source_id": "Chen2022MOSTA",
+      "title": "Spatiotemporal transcriptomic atlas of mouse organogenesis using DNA nanoball-patterned arrays",
+      "journal": "Cell",
+      "year": 2022,
+      "doi": "10.1016/j.cell.2022.04.003",
+      "url": "https://doi.org/10.1016/j.cell.2022.04.003",
+      "role": "Original MOSTA data source"
+    },
+    {
+      "source_id": "Wang2020FetalLiver",
+      "title": "Comparative analysis of cell lineage differentiation during hepatogenesis in humans and mice at the single-cell transcriptome level",
+      "journal": "Cell Research",
+      "year": 2020,
+      "doi": "10.1038/s41422-020-0378-6",
+      "url": "https://doi.org/10.1038/s41422-020-0378-6",
+      "role": "Independent mouse fetal-liver lineage markers"
+    },
+    {
+      "source_id": "Lu2021FetalLiverMERFISH",
+      "title": "Spatial transcriptome profiling by MERFISH reveals fetal liver hematopoietic stem cell niche architecture",
+      "journal": "Cell Discovery",
+      "year": 2021,
+      "doi": "10.1038/s41421-021-00266-1",
+      "url": "https://doi.org/10.1038/s41421-021-00266-1",
+      "role": "Independent spatial precedent for marker-defined fetal-liver cell types and DEG-GO validation"
+    },
+    {
+      "source_id": "Subramanian2005GSEA",
+      "title": "Gene set enrichment analysis: A knowledge-based approach for interpreting genome-wide expression profiles",
+      "journal": "Proceedings of the National Academy of Sciences",
+      "year": 2005,
+      "doi": "10.1073/pnas.0506580102",
+      "url": "https://doi.org/10.1073/pnas.0506580102",
+      "role": "GSEA method"
+    },
+    {
+      "source_id": "GeneOntology2023",
+      "title": "The Gene Ontology knowledgebase in 2023",
+      "journal": "Genetics",
+      "year": 2023,
+      "doi": "10.1093/genetics/iyad031",
+      "url": "https://doi.org/10.1093/genetics/iyad031",
+      "role": "Gene Ontology biological-process knowledgebase"
+    },
+    {
+      "source_id": "Kuleshov2016Enrichr",
+      "title": "Enrichr: a comprehensive gene set enrichment analysis web server 2016 update",
+      "journal": "Nucleic Acids Research",
+      "year": 2016,
+      "doi": "10.1093/nar/gkw377",
+      "url": "https://doi.org/10.1093/nar/gkw377",
+      "role": "Source of the versioned mouse GO Biological Process library"
+    }
+  ]
+}

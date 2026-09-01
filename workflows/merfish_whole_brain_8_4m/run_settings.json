@@ -1,0 +1,20 @@
+{
+  "input_sources": [
+    "WB_MERFISH_animal1_coronal",
+    "WB_MERFISH_animal2_coronal",
+    "WB_MERFISH_animal3_sagittal",
+    "WB_MERFISH_animal4_sagittal"
+  ],
+  "n_obs": 8380288,
+  "n_vars": 1122,
+  "n_sections": 239,
+  "batch_key": "brain_section_label",
+  "label_key": "major_brain_region",
+  "ignore_label_values": [
+    "n/a"
+  ],
+  "n_clusters": 14,
+  "iterations": 3000,
+  "sample_rate": 2048,
+  "max_neighbors": 10
+}

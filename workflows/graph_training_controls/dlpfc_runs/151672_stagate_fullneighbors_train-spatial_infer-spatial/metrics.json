@@ -1,0 +1,50 @@
+{
+  "section": "151672",
+  "method": "stagate",
+  "training_mode": "fullneighbors",
+  "train_graph": "spatial",
+  "infer_graph": "spatial",
+  "annotation_key": "gd",
+  "source": "data/151672/151672_annotated.h5ad",
+  "input_semantics": "raw integer counts in X",
+  "n_spots": 4015,
+  "n_genes_after_selection": 3000,
+  "default_whole_graph_epochs": 500,
+  "banksy_configuration": null,
+  "training": {
+    "training_seconds": 7.8126623920034035,
+    "training_seconds_this_run": 7.8126623920034035,
+    "model_cache_reused": false,
+    "inference_seconds": 0.02822558100160677,
+    "optimizer_updates": 500,
+    "target_node_exposures": 2007500,
+    "actual_node_exposures": 2007500,
+    "gradient_accumulation": true,
+    "optimizer_step_scope": "one complete node pass",
+    "train_edges": 27397,
+    "infer_edges": 27397
+  },
+  "metrics": [
+    {
+      "section": "151672",
+      "method": "stagate",
+      "training_mode": "fullneighbors",
+      "train_graph": "spatial",
+      "infer_graph": "spatial",
+      "variant": "mclust",
+      "n_eval_spots": 3888,
+      "n_reference_domains": 5,
+      "n_predicted_domains": 5,
+      "ari": 0.5841441289513594,
+      "nmi": 0.6883398494124459,
+      "pas": 0.9164351851851852,
+      "chaos": 0.05967231257902432
+    }
+  ],
+  "total_seconds": 12.60352341899852,
+  "resource": {
+    "peak_process_rss_gib": 2.1097793579101562,
+    "peak_cuda_allocated_gib": 0.4917778968811035,
+    "peak_cuda_reserved_gib": 0.69140625
+  }
+}

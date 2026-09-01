@@ -1,0 +1,64 @@
+[project]
+name = "step-analysis"
+version = "0.1.0"
+description = "Analysis notebooks, scripts, and compact workflow outputs for STEP manuscript studies."
+requires-python = ">=3.11,<3.12"
+readme = "README.md"
+dependencies = [
+    "step-kit==0.3",
+    "setuptools<81",
+    "torch==2.3.1",
+    "dgl==2.5.0",
+    "jupyter",
+    "nbformat",
+    "scanpy>=1.10.0",
+    "anndata",
+    "pyarrow",
+    "pandas",
+    "numpy<2.0",
+    "scipy",
+    "scikit-learn",
+    "matplotlib",
+    "seaborn",
+    "statsmodels",
+    "gseapy",
+    "pillow",
+    "requests",
+]
+
+[project.optional-dependencies]
+benchmark = [
+    "scib-metrics",
+    "plottable",
+    "harmonypy",
+]
+notebook = [
+    "adjustText",
+    "ipykernel",
+    "nbconvert",
+]
+microarchitecture = [
+    "grakel",
+    "liana",
+    "networkx",
+    "plotnine",
+]
+
+[tool.uv]
+package = false
+environments = ["sys_platform == 'linux' and platform_machine == 'x86_64'"]
+
+[tool.uv.sources]
+torch = { index = "pytorch-cu121" }
+dgl = { index = "dgl-cu121" }
+
+[[tool.uv.index]]
+name = "pytorch-cu121"
+url = "https://download.pytorch.org/whl/cu121"
+explicit = true
+
+[[tool.uv.index]]
+name = "dgl-cu121"
+url = "https://data.dgl.ai/wheels/torch-2.3/cu121/repo.html"
+format = "flat"
+explicit = true

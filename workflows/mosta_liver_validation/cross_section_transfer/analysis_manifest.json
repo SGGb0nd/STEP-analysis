@@ -1,0 +1,466 @@
+{
+  "source": "data/mosta_e16_test.h5ad",
+  "raw_dir": "data/stomics-mosta",
+  "target_annotation": "Liver",
+  "target_domains": [
+    "2",
+    "15",
+    "26"
+  ],
+  "evaluation_spots": "Liver spots assigned by STEP to Domains 2, 15, or 26; Liver spots assigned to other domains are outside this three-class test",
+  "normalization": "per-spot CP10K followed by log1p",
+  "validation": "leave one complete section out",
+  "feature_selection": "training sections only; top positive median within-section domain-versus-other-domain effects",
+  "classifier": "multinomial L2 logistic regression",
+  "training_weights": "equal total weight per domain and equal weight per available section within each domain",
+  "coordinates_used_for_model": false,
+  "step_embedding_used_for_model": false,
+  "held_out_labels_used_for_training_or_feature_selection": false,
+  "weight_stability": "fold-to-fold coefficient rank correlations over the union of eligible model features, with genes absent from a fold-specific selected feature set assigned weight zero",
+  "eligible_weight_gene_background": "non-mitochondrial and non-ribosomal genes detected in at least 230 of the evaluated Liver spots",
+  "stable_top_weight_gene_definition": "positive top-100 standardized coefficient in at least four of five leave-one-section-out models",
+  "features_per_domain": 200,
+  "min_stratum_spots": 20,
+  "min_detection_fraction": 0.005,
+  "regularization_c": 1.0,
+  "max_iterations": 1000,
+  "seed": 0,
+  "summary": {
+    "n_sections": 5,
+    "n_out_of_fold_spots": 45980,
+    "mean_section_balanced_accuracy": 0.6863854044603033,
+    "median_section_balanced_accuracy": 0.6867166147261602,
+    "mean_section_macro_f1": 0.5447560056389755,
+    "section_domain_combinations_with_majority_correct": 14,
+    "tested_section_domain_combinations": 14,
+    "label_mapping_null": {
+      "observed_mean_balanced_mapping_score": 0.6863854044603033,
+      "null_mean_balanced_mapping_score": 0.3333333333333333,
+      "n_joint_label_mappings": 7776,
+      "joint_mappings_at_least_observed": 1,
+      "exact_p_value": 0.0001286008230452675,
+      "identity_mapping_best_in_sections": 5,
+      "identity_mapping_unique_best_in_sections": 5,
+      "n_sections": 5
+    },
+    "classifier_weight_stability": {
+      "n_folds": 5,
+      "pairwise_comparisons_per_domain": 10,
+      "stable_gene_definition": "positive top-100 coefficient in at least four of five folds",
+      "per_domain": {
+        "2": {
+          "median_pairwise_weight_spearman_rho": 0.5448808592066131,
+          "minimum_pairwise_weight_spearman_rho": 0.49086104669459774,
+          "maximum_pairwise_weight_spearman_rho": 0.6480442365592632,
+          "stable_top_positive_weight_genes": 59,
+          "stable_domain_supported_marker_genes": [
+            "Alb",
+            "Apoa1",
+            "Ahsg",
+            "Trf",
+            "Afp",
+            "Fgb",
+            "Apoa2"
+          ],
+          "marker_program_tests": [
+            {
+              "domain": "2",
+              "program": "Fetal hepatocyte",
+              "independent_domain_association": true,
+              "n_program_genes_measured": 11,
+              "median_weight_rank_auc": 0.7745791503641097,
+              "median_weight_rank_p_value": 1.5697663462119015e-22,
+              "stable_gene_overlap": 7,
+              "stable_gene_odds_ratio": 437.7019230769231,
+              "stable_gene_fisher_p_value": 8.606541446489962e-15,
+              "stable_genes": "Afp;Ahsg;Alb;Apoa1;Apoa2;Fgb;Trf",
+              "median_weight_rank_fdr_bh": 2.825579423181423e-21,
+              "stable_gene_fisher_fdr_bh": 1.5491774603681933e-13
+            },
+            {
+              "domain": "2",
+              "program": "Primitive erythroid",
+              "independent_domain_association": true,
+              "n_program_genes_measured": 8,
+              "median_weight_rank_auc": 0.43895949774136744,
+              "median_weight_rank_p_value": 0.9670092756378474,
+              "stable_gene_overlap": 0,
+              "stable_gene_odds_ratio": 0.0,
+              "stable_gene_fisher_p_value": 1.0,
+              "stable_genes": "",
+              "median_weight_rank_fdr_bh": 0.9999999999815312,
+              "stable_gene_fisher_fdr_bh": 1.0
+            }
+          ],
+          "significant_go_terms": [
+            {
+              "domain": "2",
+              "term": "Positive Regulation of Phagocytosis (GO:0050766)",
+              "n_stable_genes": 59,
+              "n_background_genes": 13069,
+              "n_term_genes_in_background": 40,
+              "overlap": 5,
+              "odds_ratio": 34.32539682539682,
+              "fisher_p_value": 9.196843783862082e-07,
+              "genes": "AHSG;APOA1;APOA2;C4B;CAMK1D",
+              "fisher_fdr_bh": 0.0040898364306834675
+            },
+            {
+              "domain": "2",
+              "term": "Phospholipid Efflux (GO:0033700)",
+              "n_stable_genes": 59,
+              "n_background_genes": 13069,
+              "n_term_genes_in_background": 8,
+              "overlap": 3,
+              "odds_ratio": 139.33928571428572,
+              "fisher_p_value": 4.81644204318457e-06,
+              "genes": "APOA1;APOA2;APOC2",
+              "fisher_fdr_bh": 0.00901837112655802
+            },
+            {
+              "domain": "2",
+              "term": "Heme Metabolic Process (GO:0042168)",
+              "n_stable_genes": 59,
+              "n_background_genes": 13069,
+              "n_term_genes_in_background": 27,
+              "overlap": 4,
+              "odds_ratio": 41.06561264822135,
+              "fisher_p_value": 6.083902266623355e-06,
+              "genes": "ALAD;AMBP;BLVRB;HMBS",
+              "fisher_fdr_bh": 0.00901837112655802
+            },
+            {
+              "domain": "2",
+              "term": "Reverse Cholesterol Transport (GO:0043691)",
+              "n_stable_genes": 59,
+              "n_background_genes": 13069,
+              "n_term_genes_in_background": 11,
+              "overlap": 3,
+              "odds_ratio": 87.06696428571429,
+              "fisher_p_value": 1.4055016131727739e-05,
+              "genes": "APOA1;APOA2;APOC2",
+              "fisher_fdr_bh": 0.015625664184448315
+            },
+            {
+              "domain": "2",
+              "term": "Regulation of Phagocytosis (GO:0050764)",
+              "n_stable_genes": 59,
+              "n_background_genes": 13069,
+              "n_term_genes_in_background": 42,
+              "overlap": 4,
+              "odds_ratio": 24.826794258373205,
+              "fisher_p_value": 3.6891622376196034e-05,
+              "genes": "AHSG;APOA1;APOA2;CAMK1D",
+              "fisher_fdr_bh": 0.028358930594361238
+            },
+            {
+              "domain": "2",
+              "term": "Hydrogen Peroxide Metabolic Process (GO:0042743)",
+              "n_stable_genes": 59,
+              "n_background_genes": 13069,
+              "n_term_genes_in_background": 15,
+              "overlap": 3,
+              "odds_ratio": 58.026785714285715,
+              "fisher_p_value": 3.8262555333071155e-05,
+              "genes": "GPX1;PRDX2;SOD1",
+              "fisher_fdr_bh": 0.028358930594361238
+            },
+            {
+              "domain": "2",
+              "term": "Cholesterol Efflux (GO:0033344)",
+              "n_stable_genes": 59,
+              "n_background_genes": 13069,
+              "n_term_genes_in_background": 17,
+              "overlap": 3,
+              "odds_ratio": 49.72959183673469,
+              "fisher_p_value": 5.681727262321769e-05,
+              "genes": "APOA1;APOA2;APOC2",
+              "fisher_fdr_bh": 0.03609520162220701
+            }
+          ]
+        },
+        "15": {
+          "median_pairwise_weight_spearman_rho": 0.5126436096800746,
+          "minimum_pairwise_weight_spearman_rho": 0.4728850855647553,
+          "maximum_pairwise_weight_spearman_rho": 0.6701949576830584,
+          "stable_top_positive_weight_genes": 39,
+          "stable_domain_supported_marker_genes": [
+            "Hbb-y",
+            "Hba-x"
+          ],
+          "marker_program_tests": [
+            {
+              "domain": "15",
+              "program": "Stellate/stromal",
+              "independent_domain_association": true,
+              "n_program_genes_measured": 8,
+              "median_weight_rank_auc": 0.6186547737539239,
+              "median_weight_rank_p_value": 0.00013222676863254278,
+              "stable_gene_overlap": 0,
+              "stable_gene_odds_ratio": 0.0,
+              "stable_gene_fisher_p_value": 1.0,
+              "stable_genes": "",
+              "median_weight_rank_fdr_bh": 0.001190040917692885,
+              "stable_gene_fisher_fdr_bh": 1.0
+            },
+            {
+              "domain": "15",
+              "program": "Primitive erythroid",
+              "independent_domain_association": true,
+              "n_program_genes_measured": 8,
+              "median_weight_rank_auc": 0.4382034300589541,
+              "median_weight_rank_p_value": 0.9712870451340553,
+              "stable_gene_overlap": 2,
+              "stable_gene_odds_ratio": 117.33333333333333,
+              "stable_gene_fisher_p_value": 0.00024023339949145892,
+              "stable_genes": "Hba-x;Hbb-y",
+              "median_weight_rank_fdr_bh": 0.9999999999815312,
+              "stable_gene_fisher_fdr_bh": 0.00216210059542313
+            },
+            {
+              "domain": "15",
+              "program": "Mesothelial",
+              "independent_domain_association": true,
+              "n_program_genes_measured": 4,
+              "median_weight_rank_auc": 0.4957137389973211,
+              "median_weight_rank_p_value": 0.5372087892691656,
+              "stable_gene_overlap": 0,
+              "stable_gene_odds_ratio": 0.0,
+              "stable_gene_fisher_p_value": 1.0,
+              "stable_genes": "",
+              "median_weight_rank_fdr_bh": 0.8985730177062846,
+              "stable_gene_fisher_fdr_bh": 1.0
+            }
+          ],
+          "significant_go_terms": [
+            {
+              "domain": "15",
+              "term": "Muscle Contraction (GO:0006936)",
+              "n_stable_genes": 39,
+              "n_background_genes": 13069,
+              "n_term_genes_in_background": 67,
+              "overlap": 5,
+              "odds_ratio": 30.759013282732447,
+              "fisher_p_value": 1.530897995519726e-06,
+              "genes": "MYH8;MYL1;TPM1;TPM2;TPM3",
+              "fisher_fdr_bh": 0.005911087169005376
+            },
+            {
+              "domain": "15",
+              "term": "Actin-Myosin Filament Sliding (GO:0033275)",
+              "n_stable_genes": 39,
+              "n_background_genes": 13069,
+              "n_term_genes_in_background": 11,
+              "overlap": 3,
+              "odds_ratio": 135.64583333333334,
+              "fisher_p_value": 3.987690916801468e-06,
+              "genes": "MYH8;MYL1;TPM1",
+              "fisher_fdr_bh": 0.005911087169005376
+            },
+            {
+              "domain": "15",
+              "term": "Muscle Filament Sliding (GO:0030049)",
+              "n_stable_genes": 39,
+              "n_background_genes": 13069,
+              "n_term_genes_in_background": 11,
+              "overlap": 3,
+              "odds_ratio": 135.64583333333334,
+              "fisher_p_value": 3.987690916801468e-06,
+              "genes": "MYH8;MYL1;TPM1",
+              "fisher_fdr_bh": 0.005911087169005376
+            }
+          ]
+        },
+        "26": {
+          "median_pairwise_weight_spearman_rho": 0.5488309282700422,
+          "minimum_pairwise_weight_spearman_rho": 0.45879779203108567,
+          "maximum_pairwise_weight_spearman_rho": 0.6260571154360821,
+          "stable_top_positive_weight_genes": 36,
+          "stable_domain_supported_marker_genes": [],
+          "marker_program_tests": [
+            {
+              "domain": "26",
+              "program": "Stellate/stromal",
+              "independent_domain_association": true,
+              "n_program_genes_measured": 8,
+              "median_weight_rank_auc": 0.5632130005359467,
+              "median_weight_rank_p_value": 0.027477554856432124,
+              "stable_gene_overlap": 0,
+              "stable_gene_odds_ratio": 0.0,
+              "stable_gene_fisher_p_value": 1.0,
+              "stable_genes": "",
+              "median_weight_rank_fdr_bh": 0.09891919748315564,
+              "stable_gene_fisher_fdr_bh": 1.0
+            },
+            {
+              "domain": "26",
+              "program": "Mesothelial",
+              "independent_domain_association": true,
+              "n_program_genes_measured": 4,
+              "median_weight_rank_auc": 0.5026789131266743,
+              "median_weight_rank_p_value": 0.4771449430885916,
+              "stable_gene_overlap": 0,
+              "stable_gene_odds_ratio": 0.0,
+              "stable_gene_fisher_p_value": 1.0,
+              "stable_genes": "",
+              "median_weight_rank_fdr_bh": 0.8985730177062846,
+              "stable_gene_fisher_fdr_bh": 1.0
+            }
+          ],
+          "significant_go_terms": [
+            {
+              "domain": "26",
+              "term": "Negative Regulation of Blood Coagulation (GO:0030195)",
+              "n_stable_genes": 36,
+              "n_background_genes": 13069,
+              "n_term_genes_in_background": 25,
+              "overlap": 5,
+              "odds_ratio": 104.94354838709677,
+              "fisher_p_value": 6.064282854969361e-09,
+              "genes": "APOH;FGA;KNG1;SERPINF2;VTN",
+              "fisher_fdr_bh": 2.6967865856048746e-05
+            },
+            {
+              "domain": "26",
+              "term": "Regulation of Microtubule Polymerization or Depolymerization (GO:0031110)",
+              "n_stable_genes": 36,
+              "n_background_genes": 13069,
+              "n_term_genes_in_background": 26,
+              "overlap": 4,
+              "odds_ratio": 73.92613636363636,
+              "fisher_p_value": 6.942221367744746e-07,
+              "genes": "MAP1B;STMN2;STMN3;STMN4",
+              "fisher_fdr_bh": 0.0015436029211180443
+            },
+            {
+              "domain": "26",
+              "term": "Negative Regulation of Coagulation (GO:0050819)",
+              "n_stable_genes": 36,
+              "n_background_genes": 13069,
+              "n_term_genes_in_background": 10,
+              "overlap": 3,
+              "odds_ratio": 169.16883116883116,
+              "fisher_p_value": 2.2732145767922613e-06,
+              "genes": "APOH;KNG1;VTN",
+              "fisher_fdr_bh": 0.0025272463057487964
+            },
+            {
+              "domain": "26",
+              "term": "Negative Regulation of Hemostasis (GO:1900047)",
+              "n_stable_genes": 36,
+              "n_background_genes": 13069,
+              "n_term_genes_in_background": 10,
+              "overlap": 3,
+              "odds_ratio": 169.16883116883116,
+              "fisher_p_value": 2.2732145767922613e-06,
+              "genes": "APOH;KNG1;VTN",
+              "fisher_fdr_bh": 0.0025272463057487964
+            },
+            {
+              "domain": "26",
+              "term": "Microtubule Depolymerization (GO:0007019)",
+              "n_stable_genes": 36,
+              "n_background_genes": 13069,
+              "n_term_genes_in_background": 14,
+              "overlap": 3,
+              "odds_ratio": 107.6198347107438,
+              "fisher_p_value": 6.843348792872944e-06,
+              "genes": "STMN2;STMN3;STMN4",
+              "fisher_fdr_bh": 0.006086474416381196
+            },
+            {
+              "domain": "26",
+              "term": "Positive Regulation of Blood Coagulation (GO:0030194)",
+              "n_stable_genes": 36,
+              "n_background_genes": 13069,
+              "n_term_genes_in_background": 16,
+              "overlap": 3,
+              "odds_ratio": 91.04895104895105,
+              "fisher_p_value": 1.0488411040795903e-05,
+              "genes": "APOH;SERPINF2;VTN",
+              "fisher_fdr_bh": 0.007773660649736564
+            },
+            {
+              "domain": "26",
+              "term": "Microtubule Polymerization or Depolymerization (GO:0031109)",
+              "n_stable_genes": 36,
+              "n_background_genes": 13069,
+              "n_term_genes_in_background": 20,
+              "overlap": 3,
+              "odds_ratio": 69.60427807486631,
+              "fisher_p_value": 2.1190243139023972e-05,
+              "genes": "STMN2;STMN3;STMN4",
+              "fisher_fdr_bh": 0.0134618587484628
+            },
+            {
+              "domain": "26",
+              "term": "Regulation of Blood Coagulation (GO:0030193)",
+              "n_stable_genes": 36,
+              "n_background_genes": 13069,
+              "n_term_genes_in_background": 23,
+              "overlap": 3,
+              "odds_ratio": 59.15,
+              "fisher_p_value": 3.2732734581366314e-05,
+              "genes": "APOH;KNG1;VTN",
+              "fisher_fdr_bh": 0.016604240762311036
+            },
+            {
+              "domain": "26",
+              "term": "Negative Regulation of Wound Healing (GO:0061045)",
+              "n_stable_genes": 36,
+              "n_background_genes": 13069,
+              "n_term_genes_in_background": 24,
+              "overlap": 3,
+              "odds_ratio": 56.32900432900433,
+              "fisher_p_value": 3.733807232361375e-05,
+              "genes": "APOH;KNG1;VTN",
+              "fisher_fdr_bh": 0.016604240762311036
+            },
+            {
+              "domain": "26",
+              "term": "Protein Depolymerization (GO:0051261)",
+              "n_stable_genes": 36,
+              "n_background_genes": 13069,
+              "n_term_genes_in_background": 24,
+              "overlap": 3,
+              "odds_ratio": 56.32900432900433,
+              "fisher_p_value": 3.733807232361375e-05,
+              "genes": "STMN2;STMN3;STMN4",
+              "fisher_fdr_bh": 0.016604240762311036
+            }
+          ]
+        }
+      }
+    },
+    "classifier_iterations": {
+      "E16.5_E2S1.MOSTA": 36,
+      "E16.5_E2S4.MOSTA": 43,
+      "E16.5_E2S7.MOSTA": 43,
+      "E16.5_E2S10.MOSTA": 36,
+      "E16.5_E2S13.MOSTA": 34
+    },
+    "per_domain": {
+      "2": {
+        "tested_sections": 5,
+        "median_auroc": 0.8352261579386844,
+        "median_auprc": 0.8292894525223337,
+        "median_auprc_over_prevalence": 2.106506699487335,
+        "median_recall": 0.6790185277916875
+      },
+      "15": {
+        "tested_sections": 5,
+        "median_auroc": 0.8039477826803126,
+        "median_auprc": 0.5772083246037879,
+        "median_auprc_over_prevalence": 2.00890387401608,
+        "median_recall": 0.6303191489361702
+      },
+      "26": {
+        "tested_sections": 4,
+        "median_auroc": 0.8973814873577493,
+        "median_auprc": 0.5774093221060751,
+        "median_auprc_over_prevalence": 4.309074810257031,
+        "median_recall": 0.7228144912163277
+      }
+    }
+  }
+}

@@ -1,0 +1,26 @@
+section,method,training_mode,major_ari,major_nmi,ccf_ari,ccf_nmi,peak_cuda_reserved_gib,source
+C57BL6J-3.008,GraphST,Whole graph,0.35684320636899175,0.5354872709637992,0.1073593246282266,0.5722843698272041,6.029296875,workflows/graph_training_controls/merfish_runs/C57BL6J-3.008/graphst_whole_graph
+C57BL6J-3.008,GraphST,Complete-neighborhood,0.3618307118277043,0.5611398206550379,0.14971020987195308,0.6152095268966495,6.130859375,workflows/graph_training_controls/merfish_runs/C57BL6J-3.008/graphst_complete-neighborhood
+C57BL6J-3.008,GraphST,Sampled,0.3807724275344977,0.5651119027750753,0.13712571562746517,0.6228280114358075,3.603515625,workflows/graph_training_controls/merfish_runs/C57BL6J-3.008/graphst_sampled
+C57BL6J-3.008,STAGATE,Complete-neighborhood,0.33933916890032245,0.5051920862561463,0.10363191450179544,0.523599008593783,15.302734375,workflows/graph_training_controls/merfish_runs/C57BL6J-3.008/stagate_complete-neighborhood
+C57BL6J-3.008,STAGATE,Sampled,0.37014247957240676,0.5308695753908133,0.09856208670434044,0.5342111817531282,11.779296875,workflows/graph_training_controls/merfish_runs/C57BL6J-3.008/stagate_sampled
+C57BL6J-3.009,GraphST,Whole graph,0.38678941618813034,0.5530533010856036,0.10601414091407838,0.5809386650128396,5.431640625,workflows/graph_training_controls/merfish_runs/C57BL6J-3.009/graphst_whole_graph
+C57BL6J-3.009,GraphST,Complete-neighborhood,0.379467914259855,0.5706302072350256,0.14423309555186642,0.6245879731845946,6.474609375,workflows/graph_training_controls/merfish_runs/C57BL6J-3.009/graphst_complete-neighborhood
+C57BL6J-3.009,GraphST,Sampled,0.3881965402184313,0.5676428231671443,0.13733711846060917,0.6335928391560701,3.2265625,workflows/graph_training_controls/merfish_runs/C57BL6J-3.009/graphst_sampled
+C57BL6J-3.009,STAGATE,Complete-neighborhood,0.34652212213623435,0.5162962901882941,0.11543076552547232,0.5278494601606315,16.7265625,workflows/graph_training_controls/merfish_runs/C57BL6J-3.009/stagate_complete-neighborhood
+C57BL6J-3.009,STAGATE,Sampled,0.3791062227403588,0.5349444915449282,0.10739209394595077,0.5402520995388869,10.603515625,workflows/graph_training_controls/merfish_runs/C57BL6J-3.009/stagate_sampled
+C57BL6J-3.010,GraphST,Whole graph,0.38093036456348084,0.5581386253833509,0.12212326370556124,0.5850241218941357,5.298828125,workflows/graph_training_controls/merfish_runs/C57BL6J-3.010/graphst_whole_graph
+C57BL6J-3.010,GraphST,Complete-neighborhood,0.3510170023369352,0.5487206277728798,0.1459716517309878,0.6246234601286984,6.240234375,workflows/graph_training_controls/merfish_runs/C57BL6J-3.010/graphst_complete-neighborhood
+C57BL6J-3.010,GraphST,Sampled,0.39551433995044843,0.5826245801006261,0.14725330270383857,0.6389737875738757,3.1484375,workflows/graph_training_controls/merfish_runs/C57BL6J-3.010/graphst_sampled
+C57BL6J-3.010,STAGATE,Complete-neighborhood,0.32024481923404224,0.5016280171309828,0.12069604265915741,0.5424941199982425,14.083984375,workflows/graph_training_controls/merfish_runs/C57BL6J-3.010/stagate_complete-neighborhood
+C57BL6J-3.010,STAGATE,Sampled,0.3535646845387803,0.515282440315795,0.12084492458286668,0.554270686435343,10.33984375,workflows/graph_training_controls/merfish_runs/C57BL6J-3.010/stagate_sampled
+C57BL6J-3.011,GraphST,Whole graph,0.39151161479424446,0.523158349795627,0.15181581402259411,0.5625440101654708,5.06640625,workflows/graph_training_controls/merfish_runs/C57BL6J-3.011/graphst_whole_graph
+C57BL6J-3.011,GraphST,Complete-neighborhood,0.39450211490434195,0.5351758335764281,0.20927209055864715,0.6034588723116863,6.044921875,workflows/graph_training_controls/merfish_runs/C57BL6J-3.011/graphst_complete-neighborhood
+C57BL6J-3.011,GraphST,Sampled,0.40015750983972687,0.5456003842523356,0.185595282100925,0.6150464016973367,3.015625,workflows/graph_training_controls/merfish_runs/C57BL6J-3.011/graphst_sampled
+C57BL6J-3.011,STAGATE,Complete-neighborhood,0.35601004140291137,0.49803590215142407,0.13542326729409748,0.5246766188309728,14.271484375,workflows/graph_training_controls/merfish_runs/C57BL6J-3.011/stagate_complete-neighborhood
+C57BL6J-3.011,STAGATE,Sampled,0.35307713474580915,0.4875892042775419,0.15392038171653435,0.5388678924783252,9.888671875,workflows/graph_training_controls/merfish_runs/C57BL6J-3.011/stagate_sampled
+C57BL6J-3.012,GraphST,Whole graph,0.3910602006711441,0.5145527459506466,0.15836181517468056,0.584917284587619,4.48828125,workflows/graph_training_controls/merfish_runs/C57BL6J-3.012/graphst_whole_graph
+C57BL6J-3.012,GraphST,Complete-neighborhood,0.42074603777156117,0.5287644641512514,0.19553880645623842,0.6260579375586787,4.3671875,workflows/graph_training_controls/merfish_runs/C57BL6J-3.012/graphst_complete-neighborhood
+C57BL6J-3.012,GraphST,Sampled,0.42213155222885074,0.5370697257917794,0.1991130701465697,0.629989035841716,2.69921875,workflows/graph_training_controls/merfish_runs/C57BL6J-3.012/graphst_sampled
+C57BL6J-3.012,STAGATE,Complete-neighborhood,0.3644362906389067,0.5012549116057438,0.1718232286103865,0.5505131941693071,12.48828125,workflows/graph_training_controls/merfish_runs/C57BL6J-3.012/stagate_complete-neighborhood
+C57BL6J-3.012,STAGATE,Sampled,0.3572594440939428,0.4968414559662634,0.16714869396950763,0.5635854235599334,8.74609375,workflows/graph_training_controls/merfish_runs/C57BL6J-3.012/stagate_sampled

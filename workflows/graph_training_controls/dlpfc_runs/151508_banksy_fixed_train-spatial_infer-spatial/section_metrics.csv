@@ -1,0 +1,2 @@
+section,method,training_mode,train_graph,infer_graph,variant,n_eval_spots,n_reference_domains,n_predicted_domains,ari,nmi,pas,chaos
+151508,banksy,fixed,,spatial,mclust,4381,7,7,0.48346756763744275,0.6093620761416441,0.840219128052956,0.05793753397510036

@@ -1,0 +1,41 @@
+---
+title: "Cross-technology mouse-brain representation comparison"
+subtitle: "Matched evaluation of STEP and NicheCompass"
+format:
+  docx:
+    toc: true
+    number-sections: true
+---
+
+# Objective
+
+This analysis evaluates joint representation-level alignment across MERFISH and STARmap PLUS for STEP and the published NicheCompass model. It tests preservation of coarse anatomical domains together with reduction of technology-associated separation. It does not compare cross-technology microarchitectures, because microarchitecture construction additionally depends on platform-specific spatial resolution, node definition, and physical graph construction.
+
+# Data and matched design
+
+The published NicheCompass reference contains 9,471,568 cells measured over the same 432 genes: 8,380,288 MERFISH cells from 239 sections and 1,091,280 STARmap PLUS cells from 20 sections. STEP was trained on these exact cells, genes, section labels, and coordinates. Each section retained an independent spatial graph with ten non-self nearest neighbors. The STEP decoder used two hidden linear layers, with each hidden linear output modulated once by the learned batch representation through `BatchAwareScale`.
+
+The comparison aligned STEP and NicheCompass by unchanged observation identifier. Public source-atlas annotations were joined only as evaluation metadata and were not used for training. Domain evaluation used 1,987,678 annotated cells from 50 MERFISH and 20 STARmap PLUS sections. MERFISH cells were assigned to coarse Allen CCFv3 major regions through their published three-dimensional CCF coordinates. STARmap PLUS cells used the published `Main_molecular_tissue_region` labels. A shared analysis retained five anatomical regions that could be harmonized without interpreting composite region labels. Evaluation samples were balanced at no more than 2,000 cells per domain and technology.
+
+# Evaluation
+
+Anatomical structure was evaluated by domain ASW, ARI, NMI, and 90-nearest-neighbor domain purity. Technology or section mixing was evaluated with domain-conditioned batch ASW and scaled iLISI. All reported scores are oriented so that higher values are better.
+
+# Results
+
+| Evaluation | Method | Domain ASW | Domain ARI | Domain NMI | kNN domain purity | Batch ASW | Batch iLISI |
+|---|---|---:|---:|---:|---:|---:|---:|
+| MERFISH anatomical regions | STEP | 0.510 | 0.374 | 0.465 | 0.709 | 0.841 | 0.093 |
+| MERFISH anatomical regions | NicheCompass | 0.518 | 0.269 | 0.411 | 0.707 | 0.893 | 0.069 |
+| STARmap PLUS tissue regions | STEP | 0.556 | 0.442 | 0.624 | 0.764 | 0.877 | 0.119 |
+| STARmap PLUS tissue regions | NicheCompass | 0.540 | 0.516 | 0.680 | 0.751 | 0.932 | 0.092 |
+| Shared anatomical regions | STEP | 0.586 | 0.511 | 0.510 | 0.844 | 0.718 | 0.023 |
+| Shared anatomical regions | NicheCompass | 0.543 | 0.381 | 0.397 | 0.845 | 0.804 | 0.030 |
+
+STEP recovered MERFISH anatomical regions with higher ARI and NMI and comparable local purity. On STARmap PLUS, STEP had higher domain ASW and local purity, while NicheCompass had higher ARI and NMI. Across five shared anatomical regions, STEP had higher domain ASW, ARI, and NMI, with nearly identical local purity. Technology iLISI remained low for both graph-aggregated representations, showing that substantial MERFISH-STARmap PLUS separation remained at the anatomical-domain level.
+
+![Matched anatomical-domain comparison. The first two panels evaluate domain recovery within MERFISH and STARmap PLUS using their public source-atlas region annotations. The third panel evaluates five unambiguously harmonized coarse anatomical regions across technologies.](step_nichecompass_domain_metrics.png){width=6.8in}
+
+# Reproducibility
+
+The complete workflow is stored under `scripts/cross_platform_mouse_brain` in the STEP-analysis repository. It includes preparation of the exact matched input, STEP training, Allen CCFv3 coordinate mapping, source-atlas domain annotation, observation-level alignment, metric calculation, and figure generation.

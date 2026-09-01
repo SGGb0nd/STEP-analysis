@@ -1,0 +1,2 @@
+section,method,training_mode,train_graph,infer_graph,variant,n_eval_spots,n_reference_domains,n_predicted_domains,ari,nmi,pas,chaos
+151508,stagate,sampled,spatial,spatial,mclust,4381,7,7,0.4978549270340389,0.6300504201018322,0.8809632503994522,0.055479770634817495

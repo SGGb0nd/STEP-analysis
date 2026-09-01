@@ -1,0 +1,34 @@
+{
+  "matplotlib": "3.10.7",
+  "backend": "Agg",
+  "rc_params": {
+    "axes.grid": true,
+    "axes.labelsize": 14.0,
+    "axes.titlesize": 14.0,
+    "figure.dpi": 80.0,
+    "figure.figsize": [
+      6.0,
+      4.5
+    ],
+    "figure.subplot.bottom": 0.15,
+    "figure.subplot.left": 0.18,
+    "figure.subplot.right": 0.96,
+    "figure.subplot.top": 0.91,
+    "font.sans-serif": [
+      "Arial",
+      "Helvetica",
+      "DejaVu Sans",
+      "Bitstream Vera Sans",
+      "sans-serif"
+    ],
+    "font.size": 14.0,
+    "image.interpolation": "antialiased",
+    "legend.fontsize": 12.88,
+    "legend.handlelength": 0.5,
+    "legend.handletextpad": 0.4,
+    "savefig.dpi": 300.0,
+    "xtick.labelsize": 14.0,
+    "ytick.labelsize": 14.0
+  },
+  "imshow_interpolation_stage_supported": true
+}

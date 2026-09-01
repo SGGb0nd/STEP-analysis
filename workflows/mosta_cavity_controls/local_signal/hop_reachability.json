@@ -1,0 +1,13 @@
+{
+  "section": "E16.5_E2S7.MOSTA",
+  "n_cells": 149800,
+  "n_cavity_cells": 46278,
+  "edge_radius": 1.5,
+  "kernel_sigma": 1.0,
+  "graph_layers": 2,
+  "one_hop_max_coordinate_distance": 1.4142135623730951,
+  "two_hop_max_coordinate_distance": 2.8284271247461903,
+  "cavity_lcc_euclidean_diameter": 563.404827810341,
+  "cavity_lcc_hop_diameter_lower_bound": 1184.0,
+  "two_hop_fraction_of_cavity_diameter": 0.005020239417789164
+}

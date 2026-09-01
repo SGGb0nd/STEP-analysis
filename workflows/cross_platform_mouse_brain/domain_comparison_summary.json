@@ -1,0 +1,167 @@
+{
+  "step_embedding": "X_smoothed",
+  "nichecompass_embedding": "nichecompass_latent",
+  "domain_annotations": "domain_annotations.parquet",
+  "sampling": {
+    "max_per_domain": 2000,
+    "min_per_domain": 100,
+    "seed": 0
+  },
+  "sample_counts": {
+    "MERFISH anatomical-domain recovery": {
+      "Cortical subplate": 2000,
+      "Fiber tracts": 2000,
+      "Hippocampal formation": 221,
+      "Isocortex": 2000,
+      "Olfactory areas": 2000,
+      "Pallidum": 2000,
+      "Striatum": 2000,
+      "Ventricular systems": 695
+    },
+    "STARmap PLUS anatomical-domain recovery": {
+      "CB_1": 2000,
+      "CB_2": 2000,
+      "CTX_1": 2000,
+      "CTX_2": 2000,
+      "DG": 2000,
+      "ENTm": 1802,
+      "FbTrt": 2000,
+      "HPF_CA": 2000,
+      "HY": 2000,
+      "Hbl_VS": 2000,
+      "L1_HPFmo_Mngs": 2000,
+      "LSX_HY_MB_HB": 2000,
+      "MYdp": 2000,
+      "OB_1": 2000,
+      "OB_2": 2000,
+      "STR": 2000,
+      "TH": 2000
+    },
+    "Shared anatomical-region integration": [
+      {
+        "shared_domain_label": "Fiber tracts",
+        "technology": "MERFISH",
+        "n_cells": 2000
+      },
+      {
+        "shared_domain_label": "Fiber tracts",
+        "technology": "STARmap PLUS",
+        "n_cells": 2000
+      },
+      {
+        "shared_domain_label": "Hippocampal formation",
+        "technology": "MERFISH",
+        "n_cells": 221
+      },
+      {
+        "shared_domain_label": "Hippocampal formation",
+        "technology": "STARmap PLUS",
+        "n_cells": 221
+      },
+      {
+        "shared_domain_label": "Isocortex",
+        "technology": "MERFISH",
+        "n_cells": 2000
+      },
+      {
+        "shared_domain_label": "Isocortex",
+        "technology": "STARmap PLUS",
+        "n_cells": 2000
+      },
+      {
+        "shared_domain_label": "Olfactory areas",
+        "technology": "MERFISH",
+        "n_cells": 2000
+      },
+      {
+        "shared_domain_label": "Olfactory areas",
+        "technology": "STARmap PLUS",
+        "n_cells": 2000
+      },
+      {
+        "shared_domain_label": "Striatum",
+        "technology": "MERFISH",
+        "n_cells": 2000
+      },
+      {
+        "shared_domain_label": "Striatum",
+        "technology": "STARmap PLUS",
+        "n_cells": 2000
+      }
+    ]
+  },
+  "metrics": [
+    {
+      "analysis": "MERFISH anatomical-domain recovery",
+      "method": "STEP",
+      "n_cells": 12916,
+      "n_domains": 8,
+      "domain_ASW": 0.509807693772018,
+      "domain_ARI": 0.37418119299300073,
+      "domain_NMI": 0.464787964157342,
+      "knn_domain_purity": 0.7086454915251879,
+      "batch_ASW": 0.8408724665641785,
+      "batch_iLISI": 0.09263060092926026
+    },
+    {
+      "analysis": "MERFISH anatomical-domain recovery",
+      "method": "NicheCompass",
+      "n_cells": 12916,
+      "n_domains": 8,
+      "domain_ASW": 0.5182153787463903,
+      "domain_ARI": 0.26901063324870617,
+      "domain_NMI": 0.4110175392761484,
+      "knn_domain_purity": 0.7073988885834485,
+      "batch_ASW": 0.8933674097061157,
+      "batch_iLISI": 0.06910027861595154
+    },
+    {
+      "analysis": "STARmap PLUS anatomical-domain recovery",
+      "method": "STEP",
+      "n_cells": 33802,
+      "n_domains": 17,
+      "domain_ASW": 0.5556914992630482,
+      "domain_ARI": 0.442169999540537,
+      "domain_NMI": 0.6243842279580777,
+      "knn_domain_purity": 0.7640781843239114,
+      "batch_ASW": 0.8766267895698547,
+      "batch_iLISI": 0.11947925467240184
+    },
+    {
+      "analysis": "STARmap PLUS anatomical-domain recovery",
+      "method": "NicheCompass",
+      "n_cells": 33802,
+      "n_domains": 17,
+      "domain_ASW": 0.5398966409265995,
+      "domain_ARI": 0.5162849266663806,
+      "domain_NMI": 0.6795837267471149,
+      "knn_domain_purity": 0.7506227608365704,
+      "batch_ASW": 0.9317234754562378,
+      "batch_iLISI": 0.09191952253642835
+    },
+    {
+      "analysis": "Shared anatomical-region integration",
+      "method": "STEP",
+      "n_cells": 16442,
+      "n_domains": 5,
+      "domain_ASW": 0.5858850702643394,
+      "domain_ARI": 0.5105436679865312,
+      "domain_NMI": 0.5095986527095806,
+      "knn_domain_purity": 0.8436389952287168,
+      "batch_ASW": 0.7184184193611145,
+      "batch_iLISI": 0.023441433906555176
+    },
+    {
+      "analysis": "Shared anatomical-region integration",
+      "method": "NicheCompass",
+      "n_cells": 16442,
+      "n_domains": 5,
+      "domain_ASW": 0.5425862781703472,
+      "domain_ARI": 0.3814920822987307,
+      "domain_NMI": 0.3973578792400762,
+      "knn_domain_purity": 0.8450262345404821,
+      "batch_ASW": 0.8042680621147156,
+      "batch_iLISI": 0.03040933609008789
+    }
+  ]
+}

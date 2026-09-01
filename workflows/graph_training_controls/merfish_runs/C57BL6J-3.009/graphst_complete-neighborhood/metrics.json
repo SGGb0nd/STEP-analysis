@@ -1,0 +1,81 @@
+{
+  "method": "graphst",
+  "mode": "fullneighbors",
+  "scenario": "single",
+  "n_sections": 1,
+  "sections": [
+    "C57BL6J-3.009"
+  ],
+  "source": "data/WB_MERFISH_animal3_sagittal.h5ad",
+  "input_semantics": "source X; already log-normalized; no additional normalize_total/log1p",
+  "feature_preprocessing": "GraphST non-centered per-gene scaling with max 10",
+  "embedding_definition": "GraphST reconstructed expression",
+  "graph_label_key": null,
+  "graph_definition": "section-wise spatial 20-NN graph",
+  "training": {
+    "sampling": "full-neighbor",
+    "sample_size": 2029,
+    "sampled_iterations": null,
+    "fullneighbor_updates": 3000,
+    "full_graph_epochs": null,
+    "optimizer_updates": 3000,
+    "target_sampled_node_inclusions": 6087996,
+    "actual_node_exposures": 5986484,
+    "node_exposure_ratio": 0.9833258760353982,
+    "seed": 0
+  },
+  "clustering": {
+    "major_brain_region": "KMeans",
+    "ccf_region_name": "MiniBatchKMeans"
+  },
+  "graph_summary": {
+    "C57BL6J-3.009": {
+      "nodes": 113720,
+      "spatial_edges_excluding_self": 2160680,
+      "same_label_spatial_edges": {
+        "major_brain_region": 2040602,
+        "ccf_region_name": 1889944
+      },
+      "spatial_edge_label_homophily": {
+        "major_brain_region": 0.9444258289057149,
+        "ccf_region_name": 0.8746987059629376
+      },
+      "training_graph_edges_including_self": 2274400
+    }
+  },
+  "metrics": {
+    "major_brain_region": {
+      "n_total": 113720,
+      "n_cells": 110863,
+      "n_reference_domains": 14,
+      "ari": 0.379467914259855,
+      "nmi": 0.5706302072350256,
+      "pas_section_weighted": 0.9339770707990944,
+      "chaos_section_weighted": 0.005226599989807861,
+      "ari_section_weighted": 0.379467914259855,
+      "nmi_section_weighted": 0.5706302072350256
+    },
+    "ccf_region_name": {
+      "n_total": 113720,
+      "n_cells": 111391,
+      "n_reference_domains": 221,
+      "ari": 0.14423309555186642,
+      "nmi": 0.6245879731845946,
+      "pas_section_weighted": 0.694031833810631,
+      "chaos_section_weighted": 0.006274549901069442,
+      "ari_section_weighted": 0.14423309555186642,
+      "nmi_section_weighted": 0.6245879731845945
+    }
+  },
+  "timing_seconds": {
+    "training": 48.65444073099934,
+    "inference": 0.12298109000403201,
+    "evaluation": 73.93107304300065,
+    "total": 128.89362829799938
+  },
+  "resource": {
+    "peak_cuda_allocated_gib": 3.0272393226623535,
+    "peak_cuda_reserved_gib": 6.474609375,
+    "peak_process_rss_gib": 4.96356201171875
+  }
+}

@@ -1,0 +1,77 @@
+{
+  "source": "results/visium-hd/crc_8um_5slices_domain.h5ad",
+  "dataset": "crc",
+  "section": null,
+  "n_spots": 2518890,
+  "n_genes": 2000,
+  "optimizer_updates": 3000,
+  "training_seconds": 777.7854517149972,
+  "objective_mode": "matched-batch",
+  "training_graph": "complete multilayer neighborhoods from the full section graph",
+  "target_batch_size": 2048,
+  "contrastive_negative_pool": "sampled target batch",
+  "inference_graph": "complete section graph via exact full-neighbor blocks",
+  "contrast": "target-batch InfoNCE matched to GraphSAINT",
+  "encoder_batch_size": 1024,
+  "decoder_chunk_size": 2048,
+  "contrast_chunk_size": 256,
+  "peak_cuda_allocated_gib": 1.9515671730041504,
+  "peak_host_rss_gib": 47.8452033996582,
+  "metrics": [
+    {
+      "batch": "cancer_p1",
+      "n_spots": 507684,
+      "sampled_full_ari": 0.5453661414674718,
+      "sampled_full_nmi": 0.6904383235378149,
+      "embedding_linear_cka": 0.7480693949313457,
+      "sampled_pas": 0.8645023282199163,
+      "full_pas": 0.8735498853617605,
+      "sampled_chaos": 0.0047739274567620855,
+      "full_chaos": 0.004793864469370631
+    },
+    {
+      "batch": "cancer_p2",
+      "n_spots": 545913,
+      "sampled_full_ari": 0.5654739909046742,
+      "sampled_full_nmi": 0.6814205948368051,
+      "embedding_linear_cka": 0.831124369772958,
+      "sampled_pas": 0.8789948215191798,
+      "full_pas": 0.8704366813026985,
+      "sampled_chaos": 0.004288395404435428,
+      "full_chaos": 0.004299790270201371
+    },
+    {
+      "batch": "cancer_p5",
+      "n_spots": 541968,
+      "sampled_full_ari": 0.5995399366066663,
+      "sampled_full_nmi": 0.6857838413813692,
+      "embedding_linear_cka": 0.8482952716104604,
+      "sampled_pas": 0.8674875638414076,
+      "full_pas": 0.85863132140643,
+      "sampled_chaos": 0.004258670907104448,
+      "full_chaos": 0.004287373582731568
+    },
+    {
+      "batch": "normal_p3",
+      "n_spots": 487552,
+      "sampled_full_ari": 0.6626882128298106,
+      "sampled_full_nmi": 0.6530125454925302,
+      "embedding_linear_cka": 0.8019291608229862,
+      "sampled_pas": 0.8399179984904175,
+      "full_pas": 0.8520629594381728,
+      "sampled_chaos": 0.004429938761766381,
+      "full_chaos": 0.004400415109539486
+    },
+    {
+      "batch": "normal_p5",
+      "n_spots": 435773,
+      "sampled_full_ari": 0.54679651986326,
+      "sampled_full_nmi": 0.6538519393553602,
+      "embedding_linear_cka": 0.7995722805942439,
+      "sampled_pas": 0.8574946130209995,
+      "full_pas": 0.8553946664892043,
+      "sampled_chaos": 0.0043169843860531715,
+      "full_chaos": 0.004324824687427901
+    }
+  ]
+}

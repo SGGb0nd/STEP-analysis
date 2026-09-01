@@ -1,0 +1,67 @@
+{
+  "source": "results/slide-seq/prostate_slideseq_step.h5ad",
+  "dataset": "prostate",
+  "section": null,
+  "n_spots": 92932,
+  "n_genes": 2000,
+  "optimizer_updates": 2000,
+  "training_seconds": 836.6309733470116,
+  "objective_mode": "matched-batch",
+  "training_graph": "complete multilayer neighborhoods from the full section graph",
+  "target_batch_size": null,
+  "target_batch_policy": "all nodes in the randomly selected section",
+  "contrastive_negative_pool": "sampled target batch",
+  "inference_graph": "complete section graph via exact full-neighbor blocks",
+  "contrast": "target-batch InfoNCE matched to GraphSAINT",
+  "encoder_batch_size": 1024,
+  "decoder_chunk_size": 2048,
+  "contrast_chunk_size": 256,
+  "peak_cuda_allocated_gib": 20.955376148223877,
+  "peak_host_rss_gib": 6.065975189208984,
+  "metrics": [
+    {
+      "batch": "Benign04",
+      "n_spots": 22367,
+      "sampled_full_ari": 0.6281457758829387,
+      "sampled_full_nmi": 0.5047698245764738,
+      "embedding_linear_cka": 0.7839825368084651,
+      "sampled_pas": 0.8832834085930165,
+      "full_pas": 0.9153350918764251,
+      "sampled_chaos": 0.015913447728421345,
+      "full_chaos": 0.01616647243082718
+    },
+    {
+      "batch": "Tumor08",
+      "n_spots": 16384,
+      "sampled_full_ari": 0.37865854270008664,
+      "sampled_full_nmi": 0.31174934948781946,
+      "embedding_linear_cka": 0.5433629916179428,
+      "sampled_pas": 0.872882080078125,
+      "full_pas": 0.89569091796875,
+      "sampled_chaos": 0.019027557594830928,
+      "full_chaos": 0.01942094045680889
+    },
+    {
+      "batch": "Tumor02",
+      "n_spots": 25800,
+      "sampled_full_ari": 0.7327094614737955,
+      "sampled_full_nmi": 0.6170022215126955,
+      "embedding_linear_cka": 0.9117027839230638,
+      "sampled_pas": 0.9121937984496125,
+      "full_pas": 0.9254612403100775,
+      "sampled_chaos": 0.015409120006678339,
+      "full_chaos": 0.015398044092956363
+    },
+    {
+      "batch": "HP1",
+      "n_spots": 28381,
+      "sampled_full_ari": 0.6082114015974068,
+      "sampled_full_nmi": 0.5694650091833899,
+      "embedding_linear_cka": 0.8602103427437017,
+      "sampled_pas": 0.9118565237306648,
+      "full_pas": 0.8871181424192242,
+      "sampled_chaos": 0.014613922800866359,
+      "full_chaos": 0.014781669817901459
+    }
+  ]
+}

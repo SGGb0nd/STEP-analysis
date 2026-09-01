@@ -1,0 +1,10 @@
+{
+  "observed_mean_balanced_mapping_score": 0.6863854044603033,
+  "null_mean_balanced_mapping_score": 0.3333333333333333,
+  "n_joint_label_mappings": 7776,
+  "joint_mappings_at_least_observed": 1,
+  "exact_p_value": 0.0001286008230452675,
+  "identity_mapping_best_in_sections": 5,
+  "identity_mapping_unique_best_in_sections": 5,
+  "n_sections": 5
+}

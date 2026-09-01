@@ -1,0 +1,94 @@
+{
+  "model_stage": [
+    {
+      "method": "STEP",
+      "dataset": "Visium HD",
+      "minutes": 6.533333333333333,
+      "note": "edge-clip grid training"
+    },
+    {
+      "method": "STEP",
+      "dataset": "MOSTA",
+      "minutes": 4.25,
+      "note": "edge-clip grid training"
+    },
+    {
+      "method": "STEP",
+      "dataset": "slide-seq",
+      "minutes": 2.379862913033382,
+      "note": "node-sampled graph training"
+    },
+    {
+      "method": "HERGAST",
+      "dataset": "Visium HD",
+      "minutes": 67.1,
+      "note": "all 5 samples"
+    },
+    {
+      "method": "HERGAST",
+      "dataset": "MOSTA",
+      "minutes": 30.5,
+      "note": "all 5 samples"
+    },
+    {
+      "method": "HERGAST",
+      "dataset": "slide-seq",
+      "minutes": 1.9,
+      "note": "all 4 samples; reduced params"
+    },
+    {
+      "method": "NicheCompass",
+      "dataset": "Visium HD",
+      "minutes": 382.0,
+      "note": "400 epochs; merged 5-sample training"
+    },
+    {
+      "method": "NicheCompass",
+      "dataset": "MOSTA",
+      "minutes": 24.7,
+      "note": "400 epochs; training only"
+    },
+    {
+      "method": "NicheCompass",
+      "dataset": "slide-seq",
+      "minutes": 50.0,
+      "note": "400 epochs; training only"
+    },
+    {
+      "method": "BANKSY",
+      "dataset": "Visium HD",
+      "minutes": 204.3,
+      "note": "all 5 full-data samples"
+    },
+    {
+      "method": "BANKSY",
+      "dataset": "MOSTA",
+      "minutes": 20.916666666666664,
+      "note": "all 5 embedding runs"
+    },
+    {
+      "method": "BANKSY",
+      "dataset": "slide-seq",
+      "minutes": 5.416666666666667,
+      "note": "all 4 samples; full spot counts"
+    }
+  ],
+  "step_peak_memory": [
+    {
+      "dataset": "Visium HD",
+      "peak_memory_mib": 43264.58,
+      "peak_memory_gib": 42.25056640625
+    },
+    {
+      "dataset": "MOSTA",
+      "peak_memory_mib": 37675.359375,
+      "peak_memory_gib": 36.79234313964844
+    },
+    {
+      "dataset": "slide-seq",
+      "peak_memory_mib": 3511.8125,
+      "peak_memory_gib": 3.42950439453125
+    }
+  ],
+  "runtime_scope": "Values cover representation or training time. Downstream k-means and other post hoc clustering steps are excluded."
+}

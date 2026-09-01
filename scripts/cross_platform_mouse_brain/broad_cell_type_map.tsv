@@ -1,0 +1,53 @@
+technology	original_label	broad_cell_type
+MERFISH	GABAergic neuron	inhibitory neuron
+MERFISH	glutamatergic neuron	excitatory neuron
+MERFISH	astrocyte	astrocyte
+MERFISH	endothelial cell	endothelial cell
+MERFISH	olfactory ensheathing cell	olfactory ensheathing cell
+MERFISH	oligodendrocyte	oligodendrocyte
+MERFISH	vascular leptomeningeal cell	vascular and leptomeningeal cell
+MERFISH	microglial cell	microglia
+MERFISH	dopaminergic neuron	cholinergic or monoaminergic neuron
+MERFISH	neuroblast (sensu Vertebrata)	neuroblast
+MERFISH	oligodendrocyte precursor cell	oligodendrocyte precursor cell
+MERFISH	pericyte	pericyte
+MERFISH	smooth muscle cell	vascular smooth muscle cell
+MERFISH	macrophage	macrophage
+MERFISH	lymphocyte	unmatched
+MERFISH	ependymal cell	ependymal cell
+MERFISH	dendritic cell	unmatched
+MERFISH	tanycyte	unmatched
+MERFISH	glycinergic neuron	inhibitory neuron
+MERFISH	monocyte	macrophage
+MERFISH	Bergmann glial cell	astrocyte
+MERFISH	histaminergic neuron	cholinergic or monoaminergic neuron
+MERFISH	cholinergic neuron	cholinergic or monoaminergic neuron
+MERFISH	hypendymal cell	hypendymal cell
+MERFISH	choroid plexus epithelial cell	choroid plexus epithelial cell
+STARmap PLUS	Telencephalon projecting excitatory neurons	excitatory neuron
+STARmap PLUS	Cerebellum neurons	unmatched
+STARmap PLUS	Astrocytes	astrocyte
+STARmap PLUS	Oligodendrocytes	oligodendrocyte
+STARmap PLUS	Olfactory inhibitory neurons	inhibitory neuron
+STARmap PLUS	Telencephalon projecting inhibitory neurons	inhibitory neuron
+STARmap PLUS	Pericytes	pericyte
+STARmap PLUS	Di- and mesencephalon excitatory neurons	excitatory neuron
+STARmap PLUS	Telencephalon inhibitory interneurons	inhibitory neuron
+STARmap PLUS	Peptidergic neurons	unmatched
+STARmap PLUS	Microglia	microglia
+STARmap PLUS	Vascular and leptomeningeal cells	vascular and leptomeningeal cell
+STARmap PLUS	Hindbrain neurons/Spinal cord neurons	unmatched
+STARmap PLUS	Unannotated	unmatched
+STARmap PLUS	Di- and mesencephalon inhibitory neurons	inhibitory neuron
+STARmap PLUS	Vascular endothelial cells	endothelial cell
+STARmap PLUS	Oligodendrocyte precursor cells	oligodendrocyte precursor cell
+STARmap PLUS	Glutamatergic neuroblasts	neuroblast
+STARmap PLUS	Cholinergic and monoaminergic neurons	cholinergic or monoaminergic neuron
+STARmap PLUS	Dentate gyrus granule neurons	excitatory neuron
+STARmap PLUS	Vascular smooth muscle cells	vascular smooth muscle cell
+STARmap PLUS	Ependymal cells	ependymal cell
+STARmap PLUS	Non-glutamatergic neuroblasts	neuroblast
+STARmap PLUS	Choroid plexus epithelial cells	choroid plexus epithelial cell
+STARmap PLUS	Perivascular macrophages	macrophage
+STARmap PLUS	Olfactory ensheathing cells	olfactory ensheathing cell
+STARmap PLUS	Subcommissural organ hypendymal cells	hypendymal cell

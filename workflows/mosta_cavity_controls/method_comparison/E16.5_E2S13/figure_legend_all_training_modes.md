@@ -1,0 +1,1 @@
+**Common-spot MOSTA Cavity comparison.** Ground-truth Cavity annotation and the single cluster with the highest Cavity F1 score for each method in section E16.5_E2S13. All methods were evaluated on the same spots and reclustered into the same number of domains. Orange indicates Cavity or the matched cluster; gray indicates all remaining spots.

@@ -1,0 +1,7 @@
+source_id,title,journal,year,doi,url,role
+Chen2022MOSTA,Spatiotemporal transcriptomic atlas of mouse organogenesis using DNA nanoball-patterned arrays,Cell,2022,10.1016/j.cell.2022.04.003,https://doi.org/10.1016/j.cell.2022.04.003,Original MOSTA data source
+Wang2020FetalLiver,Comparative analysis of cell lineage differentiation during hepatogenesis in humans and mice at the single-cell transcriptome level,Cell Research,2020,10.1038/s41422-020-0378-6,https://doi.org/10.1038/s41422-020-0378-6,Independent mouse fetal-liver lineage markers
+Lu2021FetalLiverMERFISH,Spatial transcriptome profiling by MERFISH reveals fetal liver hematopoietic stem cell niche architecture,Cell Discovery,2021,10.1038/s41421-021-00266-1,https://doi.org/10.1038/s41421-021-00266-1,Independent spatial precedent for marker-defined fetal-liver cell types and DEG-GO validation
+Subramanian2005GSEA,Gene set enrichment analysis: A knowledge-based approach for interpreting genome-wide expression profiles,Proceedings of the National Academy of Sciences,2005,10.1073/pnas.0506580102,https://doi.org/10.1073/pnas.0506580102,GSEA method
+GeneOntology2023,The Gene Ontology knowledgebase in 2023,Genetics,2023,10.1093/genetics/iyad031,https://doi.org/10.1093/genetics/iyad031,Gene Ontology biological-process knowledgebase
+Kuleshov2016Enrichr,Enrichr: a comprehensive gene set enrichment analysis web server 2016 update,Nucleic Acids Research,2016,10.1093/nar/gkw377,https://doi.org/10.1093/nar/gkw377,Source of the versioned mouse GO Biological Process library

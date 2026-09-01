@@ -1,0 +1,34 @@
+{
+  "mosta": [
+    {
+      "method": "BANKSY Harmony-integrated",
+      "annotation_ari": 0.05695132036512079,
+      "annotation_nmi": 0.2010647318691635,
+      "pas": 0.3273383818415904,
+      "chaos": 0.06684799293996227,
+      "batch_asw": 0.7565705180168152,
+      "batch_ilisi": 0.0089638233184814,
+      "n_eval_cells": 493215.0
+    },
+    {
+      "method": "HERGAST Harmony-integrated",
+      "annotation_ari": 0.12032358952207373,
+      "annotation_nmi": 0.25844140305069796,
+      "pas": 0.28954857415123225,
+      "chaos": 0.142552615154087,
+      "batch_asw": 0.7379520535469055,
+      "batch_ilisi": 1.1920928955078125e-07,
+      "n_eval_cells": 493215.0
+    },
+    {
+      "method": "NicheCompass",
+      "annotation_ari": 0.26606767922553964,
+      "annotation_nmi": 0.4899946389960672,
+      "pas": 0.38491084010015914,
+      "chaos": 0.05745342829537608,
+      "batch_asw": 0.8381289839744568,
+      "batch_ilisi": 0.1019437313079834,
+      "n_eval_cells": 493215.0
+    }
+  ]
+}

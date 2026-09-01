@@ -1,0 +1,186 @@
+{
+  "config": {
+    "batch_col": "batch",
+    "cancer_prefix": "cancer",
+    "clustering_method": "approx",
+    "dataset_key": "crc",
+    "dataset_name": "crc_visium_hd_domain9_cancer_true50um",
+    "label_col": "cell_type",
+    "legacy_absolute_threshold": 0.8,
+    "n_clusters": 3,
+    "n_iter": 5,
+    "query_domain": 9,
+    "query_mode": "crc_domain",
+    "query_samples": null,
+    "query_zonation": null,
+    "radius": 50.0,
+    "y_flip": true
+  },
+  "dataset": "crc_visium_hd_domain9_cancer_true50um",
+  "fractions": {
+    "10": {
+      "candidate_count": 13110,
+      "candidate_jaccard_vs_20": 0.5000190701399748,
+      "coherence_threshold": 0.79216411,
+      "dominant_cell_types": {
+        "0": [
+          "Interface Fibroblasts",
+          "CAF",
+          "Endothelial"
+        ],
+        "1": [
+          "Tumor 2",
+          "Interface Fibroblasts",
+          "Tumor 1"
+        ],
+        "2": [
+          "Tumor 1",
+          "Interface Fibroblasts",
+          "Tumor 2"
+        ]
+      },
+      "focal_metrics_vs_20": {
+        "ari": 0.9022023428280375,
+        "focal_jaccard": 0.5000190701399748,
+        "nmi": 0.8539737547734714,
+        "other_count": 13110,
+        "overlap_count": 13110,
+        "reference_count": 26219
+      },
+      "ma_class_count": 3,
+      "ma_graph_count": 13110,
+      "profile_similarity_vs_20": {
+        "matched_pairs": [
+          {
+            "cosine_similarity": 0.997502205069705,
+            "other_pattern": 0,
+            "reference_pattern": 0
+          },
+          {
+            "cosine_similarity": 0.9983604601351244,
+            "other_pattern": 1,
+            "reference_pattern": 1
+          },
+          {
+            "cosine_similarity": 0.999435345414807,
+            "other_pattern": 2,
+            "reference_pattern": 2
+          }
+        ],
+        "mean_cosine_similarity": 0.9984326702065455
+      }
+    },
+    "20": {
+      "candidate_count": 26219,
+      "candidate_jaccard_vs_20": null,
+      "coherence_threshold": 0.8438787,
+      "dominant_cell_types": {
+        "0": [
+          "Interface Fibroblasts",
+          "CAF",
+          "Endothelial"
+        ],
+        "1": [
+          "Tumor 2",
+          "Interface Fibroblasts",
+          "Tumor 1"
+        ],
+        "2": [
+          "Tumor 1",
+          "Interface Fibroblasts",
+          "Tumor 2"
+        ]
+      },
+      "focal_metrics_vs_20": {
+        "ari": 1.0,
+        "focal_jaccard": 1.0,
+        "nmi": 1.0,
+        "other_count": 26219,
+        "overlap_count": 26219,
+        "reference_count": 26219
+      },
+      "ma_class_count": 3,
+      "ma_graph_count": 26219,
+      "profile_similarity_vs_20": {
+        "matched_pairs": [
+          {
+            "cosine_similarity": 0.9999999999999997,
+            "other_pattern": 0,
+            "reference_pattern": 0
+          },
+          {
+            "cosine_similarity": 1.0,
+            "other_pattern": 1,
+            "reference_pattern": 1
+          },
+          {
+            "cosine_similarity": 1.0,
+            "other_pattern": 2,
+            "reference_pattern": 2
+          }
+        ],
+        "mean_cosine_similarity": 0.9999999999999999
+      }
+    },
+    "30": {
+      "candidate_count": 39328,
+      "candidate_jaccard_vs_20": 0.6666751423921887,
+      "coherence_threshold": 0.87530928,
+      "dominant_cell_types": {
+        "0": [
+          "Tumor 2",
+          "Interface Fibroblasts",
+          "Tumor 1"
+        ],
+        "1": [
+          "Interface Fibroblasts",
+          "CAF",
+          "Endothelial"
+        ],
+        "2": [
+          "Tumor 1",
+          "Interface Fibroblasts",
+          "Tumor 2"
+        ]
+      },
+      "focal_metrics_vs_20": {
+        "ari": 0.9550515188431906,
+        "focal_jaccard": 0.6666751423921887,
+        "nmi": 0.9284324008226094,
+        "other_count": 39328,
+        "overlap_count": 26219,
+        "reference_count": 26219
+      },
+      "ma_class_count": 3,
+      "ma_graph_count": 39328,
+      "profile_similarity_vs_20": {
+        "matched_pairs": [
+          {
+            "cosine_similarity": 0.999263423733024,
+            "other_pattern": 1,
+            "reference_pattern": 0
+          },
+          {
+            "cosine_similarity": 0.9997582969051723,
+            "other_pattern": 0,
+            "reference_pattern": 1
+          },
+          {
+            "cosine_similarity": 0.9998854518194571,
+            "other_pattern": 2,
+            "reference_pattern": 2
+          }
+        ],
+        "mean_cosine_similarity": 0.9996357241525512
+      }
+    }
+  },
+  "legacy_absolute_threshold": 0.8,
+  "legacy_absolute_threshold_equivalent_quantile": 0.11101957374097976,
+  "query_batches": {
+    "cancer_p1": 41992,
+    "cancer_p2": 64159,
+    "cancer_p5": 24943
+  },
+  "query_size": 131094
+}

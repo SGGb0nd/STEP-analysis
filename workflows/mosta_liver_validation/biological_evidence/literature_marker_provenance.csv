@@ -1,0 +1,43 @@
+program,gene,source_id,source_location_and_evidence,doi,url
+Fetal hepatocyte,Hnf4a,Wang2020FetalLiver,"Mouse hepatoblast/hepatocyte marker, Fig. 1",10.1038/s41422-020-0378-6,https://doi.org/10.1038/s41422-020-0378-6
+Fetal hepatocyte,Afp,Wang2020FetalLiver,"Mouse hepatoblast/hepatocyte marker, Fig. 1; co-expression validation at E14.5",10.1038/s41422-020-0378-6,https://doi.org/10.1038/s41422-020-0378-6
+Fetal hepatocyte,Alb,Wang2020FetalLiver,Co-expression validation in E14.5 fetal-liver hepatoblasts,10.1038/s41422-020-0378-6,https://doi.org/10.1038/s41422-020-0378-6
+Fetal hepatocyte,Ahsg,Wang2020FetalLiver,"Mouse hepatocyte marker, Supplementary Table S2",10.1038/s41422-020-0378-6,https://doi.org/10.1038/s41422-020-0378-6
+Fetal hepatocyte,Apoa1,Wang2020FetalLiver,"Mouse hepatocyte marker, Supplementary Table S2",10.1038/s41422-020-0378-6,https://doi.org/10.1038/s41422-020-0378-6
+Fetal hepatocyte,Apoa2,Wang2020FetalLiver,"Mouse hepatocyte marker, Supplementary Table S2",10.1038/s41422-020-0378-6,https://doi.org/10.1038/s41422-020-0378-6
+Fetal hepatocyte,Trf,Wang2020FetalLiver,"Mouse hepatocyte marker, Supplementary Table S2",10.1038/s41422-020-0378-6,https://doi.org/10.1038/s41422-020-0378-6
+Fetal hepatocyte,Rbp4,Wang2020FetalLiver,"Mouse hepatocyte marker, Supplementary Table S2",10.1038/s41422-020-0378-6,https://doi.org/10.1038/s41422-020-0378-6
+Fetal hepatocyte,Fgb,Wang2020FetalLiver,Fetal hepatoblast marker validated by lineage tracing and E14.5 single-cell RT-qPCR,10.1038/s41422-020-0378-6,https://doi.org/10.1038/s41422-020-0378-6
+Fetal hepatocyte,Fxyd1,Wang2020FetalLiver,Hepatic lineage marker validated with HNF4A in E17.5 mouse liver,10.1038/s41422-020-0378-6,https://doi.org/10.1038/s41422-020-0378-6
+Fetal hepatocyte,Gjb1,Wang2020FetalLiver,Hepatic lineage marker validated with HNF4A in E17.5 mouse liver,10.1038/s41422-020-0378-6,https://doi.org/10.1038/s41422-020-0378-6
+Stellate/stromal,Pdgfra,Wang2020FetalLiver,"Septum transversum cell marker, Fig. 1",10.1038/s41422-020-0378-6,https://doi.org/10.1038/s41422-020-0378-6
+Stellate/stromal,Ncam1,Wang2020FetalLiver,"Septum transversum cell marker, Fig. 1",10.1038/s41422-020-0378-6,https://doi.org/10.1038/s41422-020-0378-6
+Stellate/stromal,Dcn,Wang2020FetalLiver,"Hepatic stellate-cell marker, Fig. 1",10.1038/s41422-020-0378-6,https://doi.org/10.1038/s41422-020-0378-6
+Stellate/stromal,Hgf,Wang2020FetalLiver,"Hepatic stellate-cell marker, Fig. 1",10.1038/s41422-020-0378-6,https://doi.org/10.1038/s41422-020-0378-6
+Stellate/stromal,Lum,Wang2020FetalLiver,"Mouse hepatic stellate-cell marker, Supplementary Table S2",10.1038/s41422-020-0378-6,https://doi.org/10.1038/s41422-020-0378-6
+Stellate/stromal,Pdgfrb,Wang2020FetalLiver,"Mouse hepatic stellate-cell marker, Supplementary Table S2",10.1038/s41422-020-0378-6,https://doi.org/10.1038/s41422-020-0378-6
+Stellate/stromal,Col6a1,Wang2020FetalLiver,"Mouse hepatic stellate-cell marker, Supplementary Table S2",10.1038/s41422-020-0378-6,https://doi.org/10.1038/s41422-020-0378-6
+Stellate/stromal,Col6a2,Wang2020FetalLiver,"Mouse hepatic stellate-cell marker, Supplementary Table S2",10.1038/s41422-020-0378-6,https://doi.org/10.1038/s41422-020-0378-6
+Primitive erythroid,Kit,Wang2020FetalLiver,"Erythroid-progenitor marker, Fig. 1",10.1038/s41422-020-0378-6,https://doi.org/10.1038/s41422-020-0378-6
+Primitive erythroid,Gata1,Wang2020FetalLiver,"Erythroid-progenitor marker, Fig. 1",10.1038/s41422-020-0378-6,https://doi.org/10.1038/s41422-020-0378-6
+Primitive erythroid,Bpgm,Wang2020FetalLiver,"Early erythroid-lineage marker, Fig. 1",10.1038/s41422-020-0378-6,https://doi.org/10.1038/s41422-020-0378-6
+Primitive erythroid,Gypa,Wang2020FetalLiver,"Early erythrocyte marker, Fig. 1",10.1038/s41422-020-0378-6,https://doi.org/10.1038/s41422-020-0378-6
+Primitive erythroid,Hba-a1,Wang2020FetalLiver,"Mouse fetal erythrocyte marker, Supplementary Fig. S1",10.1038/s41422-020-0378-6,https://doi.org/10.1038/s41422-020-0378-6
+Primitive erythroid,Hba-x,Wang2020FetalLiver,"Primitive erythrocyte marker, Fig. 1",10.1038/s41422-020-0378-6,https://doi.org/10.1038/s41422-020-0378-6
+Primitive erythroid,Hbb-y,Wang2020FetalLiver,"Mouse primitive erythrocyte marker, Supplementary Table S2",10.1038/s41422-020-0378-6,https://doi.org/10.1038/s41422-020-0378-6
+Primitive erythroid,Hbb-bh1,Wang2020FetalLiver,"Mouse primitive erythrocyte marker, Supplementary Table S2",10.1038/s41422-020-0378-6,https://doi.org/10.1038/s41422-020-0378-6
+Endothelial,Kdr,Wang2020FetalLiver,"Mouse fetal-liver endothelial marker, Supplementary Table S2",10.1038/s41422-020-0378-6,https://doi.org/10.1038/s41422-020-0378-6
+Endothelial,Pecam1,Wang2020FetalLiver,"Mouse fetal-liver endothelial marker, Supplementary Table S2",10.1038/s41422-020-0378-6,https://doi.org/10.1038/s41422-020-0378-6
+Endothelial,Cdh5,Wang2020FetalLiver,"Mouse fetal-liver endothelial marker, Supplementary Table S2",10.1038/s41422-020-0378-6,https://doi.org/10.1038/s41422-020-0378-6
+Endothelial,Emcn,Wang2020FetalLiver,"Mouse fetal-liver endothelial marker, Supplementary Table S2",10.1038/s41422-020-0378-6,https://doi.org/10.1038/s41422-020-0378-6
+Endothelial,Eng,Wang2020FetalLiver,"Mouse fetal-liver endothelial marker, Supplementary Table S2",10.1038/s41422-020-0378-6,https://doi.org/10.1038/s41422-020-0378-6
+Endothelial,Esam,Wang2020FetalLiver,"Mouse fetal-liver endothelial marker, Supplementary Table S2",10.1038/s41422-020-0378-6,https://doi.org/10.1038/s41422-020-0378-6
+Endothelial,Flt4,Wang2020FetalLiver,"Fetal-liver endothelial marker, Fig. 1",10.1038/s41422-020-0378-6,https://doi.org/10.1038/s41422-020-0378-6
+Mesothelial,Wt1,Wang2020FetalLiver,"Mouse fetal-liver mesothelial marker, Supplementary Table S2",10.1038/s41422-020-0378-6,https://doi.org/10.1038/s41422-020-0378-6
+Mesothelial,Upk3b,Wang2020FetalLiver,"Mouse fetal-liver mesothelial marker, Supplementary Table S2",10.1038/s41422-020-0378-6,https://doi.org/10.1038/s41422-020-0378-6
+Mesothelial,Pdpn,Wang2020FetalLiver,"Mesothelial-cell marker, Fig. 1",10.1038/s41422-020-0378-6,https://doi.org/10.1038/s41422-020-0378-6
+Mesothelial,Krt7,Wang2020FetalLiver,"Mouse fetal-liver mesothelial marker, Supplementary Table S2",10.1038/s41422-020-0378-6,https://doi.org/10.1038/s41422-020-0378-6
+Kupffer/macrophage,Cd68,Wang2020FetalLiver,"Fetal-liver Kupffer-cell marker, Fig. 1",10.1038/s41422-020-0378-6,https://doi.org/10.1038/s41422-020-0378-6
+Kupffer/macrophage,C1qa,Wang2020FetalLiver,"Mouse fetal-liver Kupffer-cell marker, Supplementary Table S2",10.1038/s41422-020-0378-6,https://doi.org/10.1038/s41422-020-0378-6
+Kupffer/macrophage,C1qb,Wang2020FetalLiver,"Mouse fetal-liver Kupffer-cell marker, Supplementary Table S2",10.1038/s41422-020-0378-6,https://doi.org/10.1038/s41422-020-0378-6
+Kupffer/macrophage,C1qc,Wang2020FetalLiver,"Mouse fetal-liver Kupffer-cell marker, Supplementary Table S2",10.1038/s41422-020-0378-6,https://doi.org/10.1038/s41422-020-0378-6

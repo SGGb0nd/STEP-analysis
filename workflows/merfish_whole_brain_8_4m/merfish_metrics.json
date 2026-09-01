@@ -1,0 +1,64 @@
+{
+  "overall": {
+    "n_total": 8380288,
+    "n_scored": 7528676,
+    "n_domain_classes": 14,
+    "n_gt_classes": 14,
+    "ari": 0.3398912788573333,
+    "nmi": 0.5029145715403782
+  },
+  "source_metrics": [
+    {
+      "source_h5ad": "WB_MERFISH_animal1_coronal",
+      "n_scored": 3698530,
+      "n_sections": 129,
+      "ari": 0.33195186176607827,
+      "nmi": 0.4934365274070451
+    },
+    {
+      "source_h5ad": "WB_MERFISH_animal2_coronal",
+      "n_scored": 1602674,
+      "n_sections": 54,
+      "ari": 0.32407204409932977,
+      "nmi": 0.48498901844265596
+    },
+    {
+      "source_h5ad": "WB_MERFISH_animal3_sagittal",
+      "n_scored": 2017360,
+      "n_sections": 22,
+      "ari": 0.37315588559672425,
+      "nmi": 0.5338955324789744
+    },
+    {
+      "source_h5ad": "WB_MERFISH_animal4_sagittal",
+      "n_scored": 210112,
+      "n_sections": 3,
+      "ari": 0.38906375154607803,
+      "nmi": 0.5037956057148746
+    }
+  ],
+  "ignore_label_values": [
+    "n/a"
+  ],
+  "spatial_previews": [
+    "merfish_coronal_pair.png",
+    "merfish_sagittal_pair.png"
+  ],
+  "umap_previews": [
+    "merfish_umap_pair.png",
+    "umap_major_brain_region.png",
+    "umap_source_h5ad.png",
+    "umap_brain_section_label.png"
+  ],
+  "full_embedding_batch_metrics": {
+    "representation": "X_smoothed",
+    "source_h5ad": {
+      "silhouette_batch": 0.9269886612892151,
+      "ilisi": 0.16721932590007782
+    },
+    "brain_section_label": {
+      "silhouette_batch": 0.7929355502128601,
+      "ilisi": 0.0072493841871619225
+    }
+  }
+}

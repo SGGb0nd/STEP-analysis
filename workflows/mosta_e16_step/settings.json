@@ -1,0 +1,44 @@
+{
+  "dataset": "MOSTA E16.5",
+  "sections": [
+    "E16.5_E2S1",
+    "E16.5_E2S4",
+    "E16.5_E2S7",
+    "E16.5_E2S10",
+    "E16.5_E2S13"
+  ],
+  "input": {
+    "shape": [
+      504861,
+      2000
+    ],
+    "expression_layer": "count",
+    "log_transformed": false,
+    "genes": "all 2000 genes in adata.var_names"
+  },
+  "model": {
+    "module_dim": 30,
+    "hidden_dim": 64,
+    "n_modules": 32,
+    "n_dec_hid_layers": 2,
+    "batch_injection_mode": "scale",
+    "n_glayers": 2,
+    "edge_clip": 1.5
+  },
+  "training": {
+    "graph_batch_size": 2,
+    "sample_rate": 2048,
+    "batch_inference": true,
+    "inference_batch_size": 64
+  },
+  "clustering": {
+    "method": "k-means",
+    "n_clusters": 27
+  },
+  "results": {
+    "n_spots": 497636,
+    "batch_counts": "batch_counts.csv",
+    "section_metrics": "step_mosta_metrics.csv",
+    "batch_metrics": "step_batch_metrics.json"
+  }
+}

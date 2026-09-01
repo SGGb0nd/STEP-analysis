@@ -1,0 +1,52 @@
+{
+  "inputs": {
+    "step_metrics": "../mosta_e16_step/step_mosta_metrics.csv",
+    "batch_counts": "../mosta_e16_step/batch_counts.csv",
+    "external_metrics": "../mosta_external_benchmark/mosta_benchmark.csv"
+  },
+  "combined_metrics": "mosta_metrics_combined.csv",
+  "step_aggregation": "cell-count-weighted mean across the five embryo sections",
+  "batch_metric_scope": "one ASW and one iLISI value for the complete five-section dataset",
+  "methods": [
+    {
+      "method": "STEP",
+      "annotation_ari": 0.3091490678382279,
+      "annotation_nmi": 0.545564237076601,
+      "pas": 0.7986148510156018,
+      "chaos": 0.00813276772561503,
+      "batch_asw": 0.8330602645874023,
+      "batch_ilisi": 0.03729474544525141,
+      "n_eval_cells": 497636.0
+    },
+    {
+      "method": "BANKSY (Harmony)",
+      "annotation_ari": 0.0569513203651207,
+      "annotation_nmi": 0.2010647318691635,
+      "pas": 0.3273383818415904,
+      "chaos": 0.0668479929399622,
+      "batch_asw": 0.7565705180168152,
+      "batch_ilisi": 0.0089638233184814,
+      "n_eval_cells": 493215.0
+    },
+    {
+      "method": "HERGAST (Harmony)",
+      "annotation_ari": 0.1203235895220737,
+      "annotation_nmi": 0.2584414030506979,
+      "pas": 0.2895485741512322,
+      "chaos": 0.142552615154087,
+      "batch_asw": 0.7379520535469055,
+      "batch_ilisi": 1.1920928955078125e-07,
+      "n_eval_cells": 493215.0
+    },
+    {
+      "method": "NicheCompass",
+      "annotation_ari": 0.2660676792255396,
+      "annotation_nmi": 0.4899946389960672,
+      "pas": 0.3849108401001591,
+      "chaos": 0.057453428295376,
+      "batch_asw": 0.8381289839744568,
+      "batch_ilisi": 0.1019437313079834,
+      "n_eval_cells": 493215.0
+    }
+  ]
+}

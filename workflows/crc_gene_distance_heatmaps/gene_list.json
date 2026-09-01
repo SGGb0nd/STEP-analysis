@@ -1,0 +1,18 @@
+{
+  "periphery_genes": [
+    "VIM",
+    "COL3A1",
+    "COL1A1",
+    "SPARC",
+    "COL1A2"
+  ],
+  "tumor_genes": [
+    "CEACAM5",
+    "EPCAM",
+    "CEACAM6",
+    "PHGR1",
+    "KRT8"
+  ],
+  "normalization": "expm1(log1p_counts), per-spot library-size normalization, log1p",
+  "target_sum": 100000.0
+}

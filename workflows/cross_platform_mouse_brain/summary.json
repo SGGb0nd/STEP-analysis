@@ -1,0 +1,208 @@
+{
+  "step_output_dir": "step_9471568_k10",
+  "nichecompass_h5ad": "anndata_umap_with_clusters.h5ad",
+  "annotation_parquet": "evaluation_annotations.parquet",
+  "step_evaluation_embedding": "step_no_graph_evaluation_embedding.npy",
+  "step_evaluation_index": "step_no_graph_evaluation_cells.parquet",
+  "step_n_obs": 9471568,
+  "nichecompass_n_obs": 9471568,
+  "evaluation_subset_n_obs": 1987678,
+  "evaluation_n_obs": 56786,
+  "sampling": {
+    "strategy": "balanced within each shared broad cell type and technology",
+    "max_per_technology_cell_type": 2000,
+    "min_per_technology_cell_type": 100,
+    "seed": 0
+  },
+  "n_neighbors": 90,
+  "metrics": [
+    {
+      "method": "STEP",
+      "n_cells": 56786,
+      "embedding_dim": 30,
+      "technology_ASW": 0.7291868329048157,
+      "technology_iLISI": 0.12319421768188477,
+      "biological_ASW": 0.5087270615622401,
+      "biological_ARI": 0.29349029934908016,
+      "biological_NMI": 0.43050324734820833,
+      "knn_biological_purity": 0.5814748214961988,
+      "knn_opposite_technology_fraction": 0.20022283542746927,
+      "cross_technology_neighbor_coverage": 0.8559504103124009,
+      "cross_technology_label_agreement": 0.4168792975275391,
+      "merfish_section_ASW": 0.8358829617500305,
+      "merfish_section_iLISI": 0.17590209415980748,
+      "starmap_plus_section_ASW": 0.8219193816184998,
+      "starmap_plus_section_iLISI": 0.2697866339432566
+    },
+    {
+      "method": "NicheCompass",
+      "n_cells": 56786,
+      "embedding_dim": 182,
+      "technology_ASW": 0.8417832851409912,
+      "technology_iLISI": 0.011721372604370117,
+      "biological_ASW": 0.49698303104378283,
+      "biological_ARI": 0.11420883968884188,
+      "biological_NMI": 0.2497632107534024,
+      "knn_biological_purity": 0.33464550726025605,
+      "knn_opposite_technology_fraction": 0.1027844733054555,
+      "cross_technology_neighbor_coverage": 0.6134258443982672,
+      "cross_technology_label_agreement": 0.21665172161720098,
+      "merfish_section_ASW": 0.9009253978729248,
+      "merfish_section_iLISI": 0.10159355280350665,
+      "starmap_plus_section_ASW": 0.9371106028556824,
+      "starmap_plus_section_iLISI": 0.13741046503970497
+    }
+  ],
+  "sample_cell_type_counts": [
+    {
+      "broad_cell_type": "astrocyte",
+      "technology": "MERFISH",
+      "n_cells": 2000
+    },
+    {
+      "broad_cell_type": "astrocyte",
+      "technology": "STARmap PLUS",
+      "n_cells": 2000
+    },
+    {
+      "broad_cell_type": "cholinergic or monoaminergic neuron",
+      "technology": "MERFISH",
+      "n_cells": 2000
+    },
+    {
+      "broad_cell_type": "cholinergic or monoaminergic neuron",
+      "technology": "STARmap PLUS",
+      "n_cells": 2000
+    },
+    {
+      "broad_cell_type": "endothelial cell",
+      "technology": "MERFISH",
+      "n_cells": 2000
+    },
+    {
+      "broad_cell_type": "endothelial cell",
+      "technology": "STARmap PLUS",
+      "n_cells": 2000
+    },
+    {
+      "broad_cell_type": "ependymal cell",
+      "technology": "MERFISH",
+      "n_cells": 393
+    },
+    {
+      "broad_cell_type": "ependymal cell",
+      "technology": "STARmap PLUS",
+      "n_cells": 393
+    },
+    {
+      "broad_cell_type": "excitatory neuron",
+      "technology": "MERFISH",
+      "n_cells": 2000
+    },
+    {
+      "broad_cell_type": "excitatory neuron",
+      "technology": "STARmap PLUS",
+      "n_cells": 2000
+    },
+    {
+      "broad_cell_type": "inhibitory neuron",
+      "technology": "MERFISH",
+      "n_cells": 2000
+    },
+    {
+      "broad_cell_type": "inhibitory neuron",
+      "technology": "STARmap PLUS",
+      "n_cells": 2000
+    },
+    {
+      "broad_cell_type": "macrophage",
+      "technology": "MERFISH",
+      "n_cells": 2000
+    },
+    {
+      "broad_cell_type": "macrophage",
+      "technology": "STARmap PLUS",
+      "n_cells": 2000
+    },
+    {
+      "broad_cell_type": "microglia",
+      "technology": "MERFISH",
+      "n_cells": 2000
+    },
+    {
+      "broad_cell_type": "microglia",
+      "technology": "STARmap PLUS",
+      "n_cells": 2000
+    },
+    {
+      "broad_cell_type": "neuroblast",
+      "technology": "MERFISH",
+      "n_cells": 2000
+    },
+    {
+      "broad_cell_type": "neuroblast",
+      "technology": "STARmap PLUS",
+      "n_cells": 2000
+    },
+    {
+      "broad_cell_type": "olfactory ensheathing cell",
+      "technology": "MERFISH",
+      "n_cells": 2000
+    },
+    {
+      "broad_cell_type": "olfactory ensheathing cell",
+      "technology": "STARmap PLUS",
+      "n_cells": 2000
+    },
+    {
+      "broad_cell_type": "oligodendrocyte",
+      "technology": "MERFISH",
+      "n_cells": 2000
+    },
+    {
+      "broad_cell_type": "oligodendrocyte",
+      "technology": "STARmap PLUS",
+      "n_cells": 2000
+    },
+    {
+      "broad_cell_type": "oligodendrocyte precursor cell",
+      "technology": "MERFISH",
+      "n_cells": 2000
+    },
+    {
+      "broad_cell_type": "oligodendrocyte precursor cell",
+      "technology": "STARmap PLUS",
+      "n_cells": 2000
+    },
+    {
+      "broad_cell_type": "pericyte",
+      "technology": "MERFISH",
+      "n_cells": 2000
+    },
+    {
+      "broad_cell_type": "pericyte",
+      "technology": "STARmap PLUS",
+      "n_cells": 2000
+    },
+    {
+      "broad_cell_type": "vascular and leptomeningeal cell",
+      "technology": "MERFISH",
+      "n_cells": 2000
+    },
+    {
+      "broad_cell_type": "vascular and leptomeningeal cell",
+      "technology": "STARmap PLUS",
+      "n_cells": 2000
+    },
+    {
+      "broad_cell_type": "vascular smooth muscle cell",
+      "technology": "MERFISH",
+      "n_cells": 2000
+    },
+    {
+      "broad_cell_type": "vascular smooth muscle cell",
+      "technology": "STARmap PLUS",
+      "n_cells": 2000
+    }
+  ]
+}

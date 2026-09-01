@@ -1,0 +1,36 @@
+{
+  "n_common_spots_all_sections": 492810,
+  "selected_section": "E16.5_E2S1",
+  "n_selected_spots": 58469,
+  "n_selected_cavity": 10141,
+  "n_reference_annotations": 10,
+  "spot_key": "sample + original spot name",
+  "count_source": "data/mosta_e16_test.h5ad:layer=count",
+  "section_counts": [
+    {
+      "sample": "E16.5_E2S7",
+      "n_spots": 146507,
+      "n_cavity": 42988
+    },
+    {
+      "sample": "E16.5_E2S13",
+      "n_spots": 76187,
+      "n_cavity": 10909
+    },
+    {
+      "sample": "E16.5_E2S1",
+      "n_spots": 58469,
+      "n_cavity": 10141
+    },
+    {
+      "sample": "E16.5_E2S10",
+      "n_spots": 113457,
+      "n_cavity": 9537
+    },
+    {
+      "sample": "E16.5_E2S4",
+      "n_spots": 98190,
+      "n_cavity": 8806
+    }
+  ]
+}

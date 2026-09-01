@@ -1,0 +1,29 @@
+{
+  "metadata": {
+    "title": "STEP analysis workflows for Decoding Spatial Microarchitectures in Complex Tissues",
+    "upload_type": "dataset",
+    "description": "Analysis-ready inputs, generated intermediates, figures, metric tables, and matched benchmark outputs supporting the STEP manuscript. Source code and notebooks are maintained in the linked GitHub repository.",
+    "creators": [
+      {"name": "Li, Lounan"},
+      {"name": "Li, Zhong"},
+      {"name": "Li, Yuanyuan"},
+      {"name": "Yin, Xiao-ming"},
+      {"name": "Xu, Xiaojiang"}
+    ],
+    "access_right": "open",
+    "license": "cc-by-4.0",
+    "keywords": [
+      "spatial transcriptomics",
+      "spatial microarchitecture",
+      "graph neural network",
+      "STEP"
+    ],
+    "related_identifiers": [
+      {
+        "identifier": "https://github.com/SGGb0nd/STEP-analysis",
+        "relation": "isSupplementTo",
+        "resource_type": "software"
+      }
+    ]
+  }
+}
